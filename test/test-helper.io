@@ -21,7 +21,10 @@ TestHelper Sequences := Object clone do(
 ) 
 
 list(
-  "fgBlack", "fgRed", "fgGreen", "fgYellow", "fgBlue", "fgMagenta", "fgCyan", "fgWhite", 
-  "bgBlack", "bgRed", "bgGreen", "bgYellow", "bgBlue", "bgMagenta", "bgCyan", "bgWhite",
+  "fgBlack",    "fgRed",    "fgGreen",    "fgYellow",     "fgBlue",     "fgMagenta",    "fgCyan",     "fgWhite", 
+  "bgBlack",    "bgRed",    "bgGreen",    "bgYellow",     "bgBlue",     "bgMagenta",    "bgCyan",     "bgWhite",
+  "setFgBlack", "setFgRed", "setFgGreen", "setFgYellow",  "setFgBlue",  "setFgMagenta", "setFgCyan",  "setFgWhite", 
+  "setBgBlack", "setBgRed", "setBgGreen", "setBgYellow",  "setBgBlue",  "setBgMagenta", "setBgCyan",  "setBgWhite",
+
   "colourReset"
 ) foreach(seqName, TestHelper Sequences addSeq(seqName))
