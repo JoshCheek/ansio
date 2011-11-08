@@ -1,6 +1,6 @@
 # helpers
 Sequence ansiEscape := method(code, (27 asCharacter) .. "[" .. code)
-Sequence colourReset := method(self .. ansiEscape("0m"))
+Sequence resetColour := method(self .. ansiEscape("0m"))
 
 # define the colours
 Sequence Colours := Object clone do(
@@ -44,21 +44,21 @@ Sequence setBgCyan      := method(Colours bgCyan    .. self)
 Sequence setBgWhite     := method(Colours bgWhite   .. self)
 
 # set foreground and reset at end
-Sequence fgBlack        := method(setFgBlack    colourReset)
-Sequence fgRed          := method(setFgRed      colourReset)
-Sequence fgGreen        := method(setFgGreen    colourReset)
-Sequence fgYellow       := method(setFgYellow   colourReset)
-Sequence fgBlue         := method(setFgBlue     colourReset)
-Sequence fgMagenta      := method(setFgMagenta  colourReset)
-Sequence fgCyan         := method(setFgCyan     colourReset)
-Sequence fgWhite        := method(setFgWhite    colourReset)
+Sequence fgBlack        := method(setFgBlack    resetColour)
+Sequence fgRed          := method(setFgRed      resetColour)
+Sequence fgGreen        := method(setFgGreen    resetColour)
+Sequence fgYellow       := method(setFgYellow   resetColour)
+Sequence fgBlue         := method(setFgBlue     resetColour)
+Sequence fgMagenta      := method(setFgMagenta  resetColour)
+Sequence fgCyan         := method(setFgCyan     resetColour)
+Sequence fgWhite        := method(setFgWhite    resetColour)
 
 # set background and reset at end
-Sequence bgBlack        := method(setBgBlack    colourReset)
-Sequence bgRed          := method(setBgRed      colourReset)
-Sequence bgGreen        := method(setBgGreen    colourReset)
-Sequence bgYellow       := method(setBgYellow   colourReset)
-Sequence bgBlue         := method(setBgBlue     colourReset)
-Sequence bgMagenta      := method(setBgMagenta  colourReset)
-Sequence bgCyan         := method(setBgCyan     colourReset)
-Sequence bgWhite        := method(setBgWhite    colourReset)
+Sequence bgBlack        := method(setBgBlack    resetColour)
+Sequence bgRed          := method(setBgRed      resetColour)
+Sequence bgGreen        := method(setBgGreen    resetColour)
+Sequence bgYellow       := method(setBgYellow   resetColour)
+Sequence bgBlue         := method(setBgBlue     resetColour)
+Sequence bgMagenta      := method(setBgMagenta  resetColour)
+Sequence bgCyan         := method(setBgCyan     resetColour)
+Sequence bgWhite        := method(setBgWhite    resetColour)

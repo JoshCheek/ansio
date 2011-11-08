@@ -3,7 +3,7 @@ doRelativeFile("test-helper.io")
 
 describe("ANSI colours (set to the colour at the beginning without reset at the end)",
   it("resets the colour at the end of the string",  
-    "colourReset" colourReset will == TestHelper Sequences colourReset
+    "resetColour" resetColour will == TestHelper Sequences resetColour
   )
 
   it("colours the foreground black",    "fgBlack"     fgBlack     will == TestHelper Sequences fgBlack)

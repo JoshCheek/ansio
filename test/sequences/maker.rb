@@ -17,4 +17,4 @@ end
   create_seq_file "bg#{colour}",    code: "#{40+index}m", use_reset: true
 end
 
-create_seq_file "colourReset", use_reset: true
+create_seq_file "resetColour", use_reset: true
