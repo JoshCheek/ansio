@@ -25,10 +25,10 @@ An example:
 
 ![screenshot][screenshot]
 
-
 How to install it
 -----------------
-Still working on this one :/
+
+    $ io install.io
 
 
 
